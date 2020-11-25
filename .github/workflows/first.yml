@@ -1,0 +1,28 @@
+name: First
+
+on: push
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Step-1
+      run: echo "Step-1 on ubuntu"
+    - name: Step-2
+      run: echo "Step-2 on ubuntu"
+
+  job2:
+    runs-on: window-latest
+    steps:
+    - name: Step-1
+      run: echo "Step-1 on window"
+    - name: Step-2
+      run: echo "Step-2 on window"
+  
+  job3:
+    runs-on: mac-latest
+    steps:
+    - name: Step-1
+      run: echo "Step-1 on mac"
+    - name: Step-2
+      run: echo "Step-2 on mac"
