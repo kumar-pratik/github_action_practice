@@ -1,0 +1,20 @@
+name: Hello
+
+on: push
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Code Checkout
+      uses: action/checkout@v1
+
+    - name: Print hello world
+      run: echo "Hello World"
+
+    - name: Run multiline Commands
+      run: |
+        echo "One line"
+        echo "Another line"
